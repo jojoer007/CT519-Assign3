@@ -7,6 +7,6 @@ services:
   myinfo-web02:
     image: nginx
     volumes:
-      - ./myinfo-web02:/usr/share/nginx/html
+      - ./CT519-Assign3/myinfo-web02/:/usr/share/nginx/html
     ports:
       - "80:80"
