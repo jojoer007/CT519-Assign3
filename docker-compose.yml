@@ -1,12 +1,12 @@
 services:
   myinfo:
-    build: ./myinfo-web
+    build: ./Container1 
     ports:
       - "8000:80"
 
   myinfo-web02:
     image: nginx
     volumes:
-      - ./myinfo-web02/:/usr/share/nginx/html
+      - ./Container2/:/usr/share/nginx/html
     ports:
       - "80:80"
