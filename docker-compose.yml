@@ -1,10 +1,10 @@
 services:
-  myinfo:
+  Container1:
     build: ./Container1 
     ports:
       - "8000:80"
 
-  myinfo-web02:
+  Container2:
     image: nginx
     volumes:
       - ./Container2/:/usr/share/nginx/html
