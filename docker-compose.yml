@@ -1,6 +1,6 @@
 services:
   myinfo:
-    build: ./container1
+    build: ./myinfo-web
     ports:
       - "8000:80"
 
